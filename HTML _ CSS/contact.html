@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<title></title>
+<head>	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+  
+	<script type="text/javascript">
+  	function validate() {
+  		if(myform.name.value.length==0)
+  		{
+   			document.getElementById("name").value="name field is empty!";
+  		}
+		if(myform.email.value.length==0)
+  		{
+   			document.getElementById("email").value="email field is empty!";
+  		}
+		if(myform.phone.value.length==0)
+  		{
+   			document.getElementById("phone").value="phone field is empty!";
+  		}
+		if(myform.message.value.length==0)
+  		{
+   			document.getElementById("message").value="query field is empty!";
+  		}		
+		
+  	}
+  	</script>
+</head>
+<body>
+
+
+<div class="topnav" id="myTopnav">
+  <a href="home.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="funfacts.html">Fun Facts</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="adoption.html">Adoption</a>
+  <a href="gallery.html">Gallery</a>
+</div>
+<p><marquee width="50%">If you wish to have consultation you can visit the offices and bond with the animals before you adopt.</marquee></p>
+<img src="media/address.jpg" width="1000" height="300"><br>
+<img src="media/map.jpg" width="1000" height="300">
+<div id="contact">
+<form id="myform">
+		<fieldset>
+			<label for="name">Name:</label><br>
+			<input type="text" id="name" onblur="validate()" placeholder="Enter your full name" autofocus/><br>
+			
+			<label for="email">Email:</label><br>
+			<input type="email" id="email" onblur="validate()"  placeholder="Enter your email address" autofocus/><br>
+			
+			<label for="phone">Phone:</label><br>
+			<input type="phone" id="phone" onblur="validate()"  placeholder="Enter your cellphone number" autofocus/><br>
+			
+			<textarea name="message" id="message" onblur="validate()" rows="10" cols="30"  placeholder="Enter your query here." autofocus></textarea>
+			<button type="button" value=check>Submit Query</button>
+		</fieldset>
+</form>
+</div>
+
+<h1>Our Office</h1>
+<p><br>Email: info@petworld.co.za</p>
+<p><br>Phone: 0714627013</p>
+<p><br>Fax:   0862412685</p>
+</body>
+</html> 
+
+  
+  

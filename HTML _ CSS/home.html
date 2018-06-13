@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<title></title>
+<head>	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	
+	<script>
+		function save(){
+			var fieldValue = document.getElementById("textfield").value;
+			localStorage.setItem('text',fieldValue);
+
+		}
+		
+		function load(){
+			var storedValue = localStorage.getItem('text');
+			if(localStorage){   
+				document.getElementById("textfield").value = storedValue;
+                            
+			}
+		}
+		
+
+		function remove(){
+			document.getElementById("textfield").value='';
+			localStorage.removeItem('text');
+		}
+
+
+
+
+	</script>
+</head>
+<body onload="load()">
+
+  
+  
+<div class="topnav" id="myTopnav">
+  <a href="home.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="funfacts.html">Fun Facts</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="adoption.html">Adoption</a>
+  <a href="gallery.html">Gallery</a>
+</div>
+
+<div id='welcomespace'>
+<marquee><img id="welcome" src="media/welcome.jpg"></marquee>
+</div>
+
+
+<div id='img'>
+<img id="my_image" src="media/pets.jpg">
+</div>
+
+<div id='welcomespace'>
+<marquee direction="right"><img id="welcome" src="media/care.jpg"></marquee>
+</div>
+
+<article>
+<!-- VIDEO -->
+<center>
+<div id="video">
+		<video id="video1" width="400" height="225" autoplay>
+		<source src="media/DancingPuppy.mp4" type="video/mp4">
+		</video>
+
+		<video id="video2" width="400" height="300" autoplay>
+		<source src="media/TwoKitties.mp4" type="video/mp4">
+		</video>
+	
+		<textarea  type="text" id="textfield" rows="10" cols="30" placeholder="Enter your Wishlist items here."></textarea><br>
+		<input type="button" value="save" onclick="save()" align="right"/>
+		<input type="button" value="remove" onclick="remove()" align="right"/>
+</div>
+</center>
+<p align="middle">
+Pet World is a nation wide online pet store, made for all pet lovers and anyone who desires to own a pet.
+<br>
+</p>
+</article>
+
+
+
+
+
+<center><footer>Copyright &copy; PetWorld.com</footer></center>
+</body>
+</html>
+
+
+
+

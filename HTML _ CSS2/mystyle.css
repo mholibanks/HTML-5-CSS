@@ -1,0 +1,74 @@
+body	{margin:0}
+p	{text-align: center;font-family:verdana;}
+td	{text-align: middle;}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Centering the home page picture */
+#img
+	{
+	width: 1000px;
+	height: 450px;
+	margin: 0 auto; 
+	}
+
+#my_image
+	{
+		width: 100%;
+		height: 100%;
+	}
+
+/*Name of the store*/
+ h1	{  
+           color: darkblue; 
+      	   text-align: center;
+  	   font-size: 50px;
+  	}
+
+#welcomespace{
+	width: 100px
+	height: 100px
+	margin 0 auto;
+		
+	}
+
+#welcome{
+		width: 100%;
+		height: 100%;
+
+	}
+
+/* Centering the footer */
+footer {
+    	padding: 1em;
+	bottom: 0;
+    	color: white;
+    	background-color: black;
+    	clear: left;
+    	text-align: center;
+	}
+
+
